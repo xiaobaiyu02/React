@@ -1,0 +1,258 @@
+body{
+	padding: 15px 0;
+	font-family: MicroSoft YaHei;
+}
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.banner-scroll{
+	width: 1024px;
+	margin: 20px auto;
+	position: relative;
+}
+.banner-scroll .img-container{
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.banner-scroll .img-container ul{
+	display: flex;
+	width: 300%;
+	transition: all .3s linear;
+}
+.banner-scroll .img-container li{
+	flex: 1;
+	position: relative;
+}
+.banner-scroll .img-container li img{
+	display: block;
+	width: 100%;
+	max-width: 100%;
+}
+.banner-scroll .img-container li h5{
+	position: absolute;
+	top: 20px;
+	left: 15%;
+	color: #f9f9f9;
+	font-size: 18px;
+	padding: 10px;
+	background-color: rgba(255,255,255,.1);
+	border-radius: 4px;
+	box-shadow: 1px 2px 5px #999;
+}
+.banner-scroll .img-container li p{
+	position: absolute;
+	width: 350px;
+	bottom: 40px;
+	left: 15%;
+	font-size: 14px;
+	font-family: cursive;
+	padding: 10px;
+	background-color: rgba(0,0,0,.1);
+	border-radius: 4px;
+	color: #fafafa;
+}
+.banner-scroll .quick-look{
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	text-align: center;
+	cursor: pointer;
+}
+.banner-scroll .quick-look li.selected{
+	border: 1px solid #999;
+	background-color: rgba(255,255,255,.4);
+}
+.banner-scroll .quick-look li{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	border-radius: 100%;
+	background-color: rgba(0,0,0,.4);
+	margin: 0 5px;
+	border: 1px solid transparent;
+}
+.hander span{
+	vertical-align: middle;
+	position: absolute;
+	display: block;
+	width: 8%;
+	top: 0;
+	bottom: 0;
+	z-index: 999;
+	cursor: pointer;
+}
+.hander .left{
+	left: 0;
+	background:-webkit-linear-gradient(left, rgba(0,0,0,.05), rgba(0,0,0,.1));
+}
+.hander .right{
+	right: 0;
+	background:-webkit-linear-gradient(left, rgba(0,0,0,.1), rgba(0,0,0,.05));
+}
+
+
+#weather-forecast{
+	color: #234;
+	padding: 2em 3em;
+	font-size: 16px;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+}
+
+/* menu style */
+/*a.active{
+	color:red;
+}
+.sublist{
+	display: none;
+	padding-left: 10px;
+}
+.menu>.open .sublist{
+	display: block;
+}*/
+
+/* form style */
+section{
+	margin-bottom: 20px
+}
+form[name="reactFrom"]{
+	width: 30%;
+	position: relative;
+}
+form[name="reactFrom"] pre{
+	position: absolute;
+	left: 120%;
+	top: 0;
+}
+/* animation */
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+#animation{
+	position: absolute;
+	top: 10px;
+	right: 100px;
+	padding-bottom: 100px;
+}
+.example-appear {
+  opacity: 0.01;
+}
+
+.example-appear.example-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+/*menu3*/
+.sublist{
+	padding-left: 10px;
+}
+.item{
+	color: #666;
+}
+/* tabset */
+.header a{
+	display: inline-block;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.header a.active,.header a:hover{
+	text-decoration: underline;
+}
+.content{
+	padding: 20px 10px;
+}
+/* tabset2 */
+.tabset .navs li{
+	display: inline-block;
+	margin-right: 10px;
+}
+.tabset .navs li.active{
+	text-decoration: underline;
+}
+.tabset .nav{
+	padding-top: 10px;
+}
+/* add-template */
+.addBox .navs li{
+	display: inline-block;
+	margin-right: 10px;
+	background-color: #eee;
+	padding: 10px 0;
+	margin: 0;
+}
+.addBox .navs li:first-child{
+	padding-left: 10px;
+}
+.addBox .navs li:last-child{
+	padding-right: 10px;
+}
+.addBox .navs li.active{
+	background-color: #e7eff8;
+}
+.addBox .navs a:hover{
+	text-decoration: none;
+}
+.children{
+	padding: 20px;
+}
+input.invalid{
+	border: 1px solid red;
+}
+/* dialog */
+.my-dialog{
+	position: initial;
+}
+#dialog .dialog{
+ position: absolute;
+ left: 0;
+ top: 0;
+ right: 0;
+ z-index: 99;
+ box-shadow: 1px 2px 8px #ddd;
+ width: 500px;
+ margin: auto;
+ border: 1px solid #ddd;
+ border-radius: 4px;
+ background-color: #fff;
+}
+#dialog .dialog h2{
+	margin: 0;
+	font-size: 18px;
+	line-height: 40px;
+	padding: 0 5px;
+	background-color: #eee;
+	border-bottom: 1px solid #ddd;
+}
+#dialog .dialog h2 .title{
+	display: inline-block;
+}
+#dialog .dialog h2 .close{
+	margin-top: 5px;
+}
+#dialog .dialog footer{
+	text-align: right;
+	margin: 10px 10px 10px 0;
+}
+#dialog .dialog footer button{
+	margin-left: 10px;
+}
