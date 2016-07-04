@@ -5,7 +5,7 @@ var NotesList = React.createClass({
 		return {};
 	},
 	getInitialState: function() {
-		console.log("---------geyInitialState");
+		console.log("---------getInitialState");
 		return {};
 	},
 	componentWillMount: function() {
